@@ -1746,8 +1746,8 @@ output:
             }
         }
         $frame .= '
-        <a href="https://github.com/qkqpttgf/OneManager-php" target="_blank">Github</a>
-<a href="https://git.hit.edu.cn/ysun/OneManager-php" target="_blank">HIT Gitlab</a><br><br>
+        <a href="https://github.com/SYSTEMWindows11" target="_blank">Github</a>
+<a href="https://www.mrzefr.cn" target="_blank">MrZeFr的小窝</a><br><br>
 ';
         if (!$canOneKeyUpate) {
             $frame .= '
@@ -1759,13 +1759,12 @@ output:
     Update from
     <select name="GitSource" onchange="changeGitSource(this)">
         <option value="Github" selected>Github</option>
-        <option value="HITGitlab">HIT Gitlab</option>
     </select>
-    <input type="text" name="auth" size="6" placeholder="auth" value="qkqpttgf">
-    <input type="text" name="project" size="12" placeholder="project" value="OneManager-php">
+    <input type="text" name="auth" size="6" placeholder="auth" value="SYSTEMWindows11">
+    <input type="text" name="project" size="12" placeholder="project" value="OneManager">
     <button name="QueryBranchs" onclick="querybranchs(this);return false;">' . getconstStr('QueryBranchs') . '</button>
     <select name="branch">
-        <option value="master">master</option>
+        <option value="main">main</option>
     </select>
     <input type="submit" name="updateProgram" value="' . getconstStr('updateProgram') . '">
 </form>
@@ -2085,9 +2084,8 @@ function render_list($path = '', $files = [])
     date_default_timezone_set(get_timezone($_SERVER['timezone']));
     $authinfo = '
 <!--
-    OneManager: An index & manager of Onedrive auth by ysun.
-    HIT Gitlab: https://git.hit.edu.cn/ysun/OneManager-php
-    Github: https://github.com/qkqpttgf/OneManager-php
+    MrZeFr
+    Github: https://github.com/SYSTEMWindows11
 -->';
     //$authinfo = $path . '<br><pre>' . json_encode($files, JSON_PRETTY_PRINT) . '</pre>';
 

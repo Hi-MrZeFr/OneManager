@@ -558,7 +558,7 @@ function compareadminsha1($adminsha1, $timestamp, $pass)
         return 'The time in server is ' . time() . ' (' . date("Y-m-d H:i:s") . ' UTC),<br>and your time is ' . $timestamp . ' (' . date("Y-m-d H:i:s", $timestamp) . ' UTC)';
     }
     if ($adminsha1 == sha1($timestamp . $pass)) return '';
-    else return 'Error password';
+    else return '密码错误';
 }
 
 function proxy_replace_domain($url, $domainforproxy, &$header)
@@ -1105,7 +1105,7 @@ function adminform($name = '', $pass = '', $storage = '', $path = '')
             f.password1.value = sha1(timestamp + "" + f.password1.value);
             return true;
         } catch {
-            alert("sha1.js not loaded.");
+            alert("sha1.js 没加载.");
             return false;
         }
     }
@@ -1905,7 +1905,7 @@ output:
         try {
             sha1(1);
         } catch {
-            alert("sha1.js not loaded.");
+            alert("sha1.js 没加载.");
             return false;
         }
         var timestamp = new Date().getTime();
@@ -1948,7 +1948,7 @@ output:
         try {
             sha1(1);
         } catch {
-            alert("sha1.js not loaded.");
+            alert("sha1.js 没加载.");
             return false;
         }
         var timestamp = new Date().getTime();
@@ -1985,7 +1985,7 @@ output:
         try {
             sha1(1);
         } catch {
-            alert("sha1.js not loaded.");
+            alert("sha1.js 没加载.");
             return false;
         }
         var timestamp = new Date().getTime();

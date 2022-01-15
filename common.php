@@ -1076,6 +1076,9 @@ function adminform($name = '', $pass = '', $storage = '', $path = '')
     }
     $statusCode = 401;
     $html .= '
+    <style>
+    body{background-image:linear-gradient(60deg,#343b44 0%,#485563 100%);background-attachment:fixed;color:#343b44}body>div{position:absolute;text-align:center;background-color:rgba(221,221,221,.5);border-radius:20px;width:75vw;max-width:500px;height:350px;margin:auto;top:25%;bottom:50%;left:0;right:0}body>div:hover{box-shadow:3px 3px 6px 3px rgba(0,0,0,.3)}h4{font-size:40px}input{font-size:20px;margin:2%auto;border:#343b44 2px solid;border-radius:10px;padding:10px;height:50px;text-align:center}input:last-of-type{color:#343b44;height:50px;width:80px;font-weight:800}input:hover:last-of-type{cursor:pointer;color:#ddd;background-color:#485563}
+    </style>
 <body>
     <div>
     <center><h4>' . getconstStr('InputPassword') . '</h4>
@@ -2085,7 +2088,9 @@ function render_list($path = '', $files = [])
     $authinfo = '
 <!--
     MrZeFr
+    我的博客: https://www.mrzefr.cn
     Github: https://github.com/SYSTEMWindows11
+    我的邮箱: mrzefr@mrzefr.cn
 -->';
     //$authinfo = $path . '<br><pre>' . json_encode($files, JSON_PRETTY_PRINT) . '</pre>';
 
